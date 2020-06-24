@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONMOON STREAM</title>
+    <style>
+    .twitch .twitch-video {
+    padding-top: 56.25%;
+    position: relative;
+    height: 0;
+    }
+
+    .twitch .twitch-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    }
+        .twitch .twitch-chat {
+    height: 300px;
+    }
+
+    .twitch .twitch-chat iframe {
+    width: 100%;
+    height: 100%;
+    }
+
+    @media screen and (min-width: 850px) {
+  .twitch {
+    position: relative;
+  }
+  
+  .twitch .twitch-video {
+    width: 100%;
+    padding-top: 42.1875%;
+  }
+
+  .twitch .twitch-chat {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="twitch">
+        <div class="twitch-video">
+          <iframe
+            src="https://player.twitch.tv/?channel=moonmoon&parent=moonmoon&autoplay=false"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen="true"
+            height="100%"
+            width="100%">
+          </iframe>
+        </div>
+        <div class="twitch-chat">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            src="https://www.twitch.tv/embed/moonmoon/chat?parent=moonmoon"
+            height="100%"
+            width="100%">
+          </iframe>
+        </div>
+      </div>
+</body>
+</html>
